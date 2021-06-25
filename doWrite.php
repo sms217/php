@@ -20,9 +20,6 @@ title='$title',
 mysqli_query($connect,$sql);
 $id = mysqli_insert_id($connect);
 ?>
-<script>alert("게시물이 등록되었습니다.")</script>
-<?php
-header("location:/usr/article/list.php");
-?>
-
-<div><a href="list.php">목록</a></div>
+<script>alert("게시물이 등록되었습니다.");
+location.href=('list.php');
+</script>
